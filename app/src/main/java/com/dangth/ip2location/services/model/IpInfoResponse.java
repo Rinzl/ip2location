@@ -49,4 +49,24 @@ public class IpInfoResponse implements Serializable {
     @SerializedName("zip")
     @Expose
     public String zip;
+
+    @Override
+    public String toString() {
+        return "IpInfoResponse{" +
+                "as='" + as + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", isp='" + isp + '\'' +
+                ", lat=" + lat +
+                ", lon=" + lon +
+                ", org='" + org + '\'' +
+                ", query='" + query + '\'' +
+                ", region='" + region + '\'' +
+                ", regionName='" + regionName + '\'' +
+                ", status='" + status + '\'' +
+                ", timezone='" + timezone + '\'' +
+                ", zip='" + zip + '\'' +
+                '}';
+    }
 }
